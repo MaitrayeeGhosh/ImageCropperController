@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		628F93A5199E6167009EDE38 /* Backgroundimage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 628F93A3199E6167009EDE38 /* Backgroundimage.jpeg */; };
 		62911C8A199D021D0032827F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62911C89199D021D0032827F /* Foundation.framework */; };
 		62911C8C199D021D0032827F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62911C8B199D021D0032827F /* CoreGraphics.framework */; };
 		62911C8E199D021D0032827F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62911C8D199D021D0032827F /* UIKit.framework */; };
@@ -21,6 +22,9 @@
 		62911CAB199D021D0032827F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62911C8D199D021D0032827F /* UIKit.framework */; };
 		62911CB3199D021D0032827F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62911CB1199D021D0032827F /* InfoPlist.strings */; };
 		62911CB5199D021D0032827F /* ImageCropperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62911CB4199D021D0032827F /* ImageCropperTests.m */; };
+		62911CCB199D04580032827F /* cropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62911CC9199D04580032827F /* cropView.m */; };
+		62911CD0199D0CC00032827F /* cat-and-dog-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62911CCF199D0CC00032827F /* cat-and-dog-2.jpg */; };
+		62911CD3199D12D70032827F /* ImageCropController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62911CD2199D12D70032827F /* ImageCropController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		628F93A3199E6167009EDE38 /* Backgroundimage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Backgroundimage.jpeg; sourceTree = "<group>"; };
 		62911C86199D021D0032827F /* ImageCropper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageCropper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62911C89199D021D0032827F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		62911C8B199D021D0032827F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +58,11 @@
 		62911CB0199D021D0032827F /* ImageCropperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImageCropperTests-Info.plist"; sourceTree = "<group>"; };
 		62911CB2199D021D0032827F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		62911CB4199D021D0032827F /* ImageCropperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCropperTests.m; sourceTree = "<group>"; };
+		62911CC8199D04580032827F /* cropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cropView.h; sourceTree = "<group>"; };
+		62911CC9199D04580032827F /* cropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cropView.m; sourceTree = "<group>"; };
+		62911CCF199D0CC00032827F /* cat-and-dog-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cat-and-dog-2.jpg"; sourceTree = "<group>"; };
+		62911CD1199D12D70032827F /* ImageCropController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCropController.h; sourceTree = "<group>"; };
+		62911CD2199D12D70032827F /* ImageCropController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCropController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +127,9 @@
 				62911C9B199D021D0032827F /* Main.storyboard */,
 				62911C9E199D021D0032827F /* ViewController.h */,
 				62911C9F199D021D0032827F /* ViewController.m */,
+				62911CC5199D04580032827F /* Lib */,
 				62911CA1199D021D0032827F /* Images.xcassets */,
+				62911CCE199D0CC00032827F /* Images */,
 				62911C90199D021D0032827F /* Supporting Files */,
 			);
 			path = ImageCropper;
@@ -150,6 +162,26 @@
 				62911CB1199D021D0032827F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62911CC5199D04580032827F /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				62911CC8199D04580032827F /* cropView.h */,
+				62911CC9199D04580032827F /* cropView.m */,
+				62911CD1199D12D70032827F /* ImageCropController.h */,
+				62911CD2199D12D70032827F /* ImageCropController.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		62911CCE199D0CC00032827F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				628F93A3199E6167009EDE38 /* Backgroundimage.jpeg */,
+				62911CCF199D0CC00032827F /* cat-and-dog-2.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +262,8 @@
 			files = (
 				62911CA2199D021D0032827F /* Images.xcassets in Resources */,
 				62911C94199D021D0032827F /* InfoPlist.strings in Resources */,
+				62911CD0199D0CC00032827F /* cat-and-dog-2.jpg in Resources */,
+				628F93A5199E6167009EDE38 /* Backgroundimage.jpeg in Resources */,
 				62911C9D199D021D0032827F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62911CCB199D04580032827F /* cropView.m in Sources */,
+				62911CD3199D12D70032827F /* ImageCropController.m in Sources */,
 				62911CA0199D021D0032827F /* ViewController.m in Sources */,
 				62911C9A199D021D0032827F /* AppDelegate.m in Sources */,
 				62911C96199D021D0032827F /* main.m in Sources */,
@@ -456,6 +492,7 @@
 				62911CBA199D021D0032827F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62911CBB199D021D0032827F /* Build configuration list for PBXNativeTarget "ImageCropperTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +501,7 @@
 				62911CBD199D021D0032827F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
